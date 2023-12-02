@@ -1,0 +1,67 @@
+@import url('./Components/Header/Header.css');
+@import url('./Components/Main/Main.css');
+@import url('./Components/Footer/Footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darker-gray: #262b32;
+  --dark-gray: #3a3e42;
+  --light-gray: #f1f1f1;
+  --very-light-gray: #fafafab9;
+  --skeleton-main: rgb(31, 94, 128);
+  --skeleton-secondary: #f0f3f5;
+  --success-green: #03c503;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input:autofill,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+/* Theme */
+
+.dark {
+  background-color: var(--darker-gray);
+  color: white;
+}
+
+.light {
+  background-color: var(--light-gray);
+}
+
+.mainDark {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.mainLight {
+  background-color: var(--very-light-gray);
+}
